@@ -1,5 +1,5 @@
 function getYear() {
-  fetch("http://localhost:3000/year/")
+  fetch("https://whatyearisit-backend-lilac-eta.vercel.app/year/")
     .then((r) => r.json())
     .then((data) => {
       console.log(data);
