@@ -1,5 +1,7 @@
-fetch("https://whatyearisit-backend-lilac-eta.vercel.app/year/")
+const year = document.querySelector("#year");
+
+fetch("https://whatyearisit-backend-lilac-eta.vercel.app/year")
   .then((r) => r.json())
   .then((data) => {
-    document.querySelector("#year").textContent = data.year;
+    year.textContent = data.year;
   });
